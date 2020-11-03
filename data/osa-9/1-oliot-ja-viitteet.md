@@ -773,8 +773,8 @@ class Henkilo:
         self.nimi = nimi
         self.syntynyt = syntynyt
 
-def vanhempi_kuin(self, toinen: Henkilo):
-    return self.syntynyt < toinen.syntynyt:
+    def vanhempi_kuin(self, toinen: "Henkilo"):
+        return self.syntynyt < toinen.syntynyt
 ```
 
 <programming-exercise name='Asuntovertailu' tmcname='osa09-05_asuntovertailu'>
